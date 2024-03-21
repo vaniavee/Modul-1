@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Algoritma dan Struktur Data Modul Tipe Data</h1>
+# <h1 align="center">Laporan Praktikum Algoritma dan Struktur Data/h1>
 # <h1 align="center">Modul Tipe Data</h1>
 <p align="center">Vania Noverina</p>
 <p align="center">2311110031</p>
