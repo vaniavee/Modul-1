@@ -290,7 +290,8 @@ Setiap baris matriks direpresentasikan oleh `loop` pertama (`i`), kolom direpres
 ![Fullcode Unguided 2](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/6eb68eb4-d63f-4da1-a35c-fe49dc6b987f)
 
 
-### 3. 
+### 3. Buatlah program menu untuk mencari nilai Maksimum, Minimum dan Nilai
+ rata– rata dari suatu array dengan input yang dimasukan oleh user!
 
 ```C++
 #include <iostream> // input processor directive
