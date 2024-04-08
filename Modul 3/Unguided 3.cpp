@@ -65,21 +65,21 @@ int main(){
     } 
 
     // Menampilkan array sebelum diurutkan secara descending
-    cout << "Urutan nama sebelum sorting: " << endl;
+    cout << "Urutan karakter sebelum sorting: " << endl;
     print_array(a, length);
 
     // Memanggil fungsi insertion sort untuk mengurutkan array secara ASCENDING
     insertion_sort_ascending(a, length);
 
     // Menampilkan array setelah diurutkan secara ascending
-    cout << "Urutan nama setelah ascending sorting: " << endl;
+    cout << "Urutan karakter setelah ascending sorting: " << endl;
     print_array(a, length);
 
     // memanggil fungsi insertion sort untuk mengurutkan array secara DESCENDING
     insertion_sort_descending(a,length);
 
     // Menampilkan array setelah diurutkan secara descending
-    cout << "Urutan nama setelah descending sorting: " << endl;
+    cout << "Urutan karakter setelah descending sorting: " << endl;
     print_array(a, length);
 }
 
