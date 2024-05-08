@@ -10,32 +10,36 @@ Linked list atau yang biasa juga disebut sebagai `senarai berantai` merupakan sa
 - Linked List saling terhubung dengan bantuan pointer variabel 
 - Masing-masing data dalam Linked List disebut dengan node (simpul) yang menempati alokasi memori secara dinamis dan biasanya berupa struct yang terdiri dari beberapa field. 
 
-Perbedaan Linked List dan Array :
+####  Perbedaan Linked List dan Array :
 - Berbeda dengan array yang juga merupakan struktur data linier dan tipe data komposit, linked list dibentuk secara dinamik.[3]
 - Pada saat awal program dijalankan elemen linked list belum terdata. Elemen linked list (node) dibentuk sambil jalan sesuai instruksi. Apabila setiap elemen array dapat diakses secara langsung dengan menggunakan indeks, sebuah node linked list diakses dengan menggunakan pointer yang mengacu ke node tersebut. [3]
 
 
+
 ### Single Linked List Non-Circular
 Single Linked List adalah suatu kumpulan elemen  data  (yang  disebut sebagai node) dimana urutannya ditentukan  oleh  suatu pointer. Single Linked List hanya memiliki 1 (satu) petunjuk/pointer (NEXT). Setiap elemen (node) dari suatu linked list terdiri  atas dua bagian, yaitu :[4]
-- 1. INFO: berisi informasi tentang elemen data yang bersangkutan.
-- 2.  NEXT(link field/next pointer field) : berisi alamat dari elemen (node)selanjutnya yang dituju. 
+- INFO: berisi informasi tentang elemen data yang bersangkutan.
+- NEXT(link field/next pointer field) : berisi alamat dari elemen (node)selanjutnya yang dituju. 
 
-Contoh Single Non-Circular Linked List :
+#### Contoh Single Non-Circular Linked List :
 ![Contoh Single Linked List](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/823fa76c-5639-453d-b2fb-4d62fafec33f)
+
 
 
 ### Double Linked List Non-Circular
 Double Linked List Circular adalah linked list dengan menggunakan pointer, dimana setiap node memiliki 3 field yaitu 1 field pointer yang menunjuk pointer berikutnya (next), 1 field menunjuk pointer sebelumnya (prev), serta sebuah field yang berisi, data untuk node tersebut. Double Linked List Circular pointer next dan prev-nya menunjuk ke dirinya sendiri secara circular.[3]
 
-Contoh Double Non-Circular Linked List :
+#### Contoh Double Non-Circular Linked List :
 ![Contoh Double Linked List](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/9e7a243e-03cb-4e0f-bfe4-6218dd8d8fcb)
+
 
 
 ### Circular Linked List
 Cirular Linked List adalah linked list yang di mana semua simpul terhubung membentuk lingkaran. Dalam sebuah daftar berantai melingkar, simpul pertama dan simpul terakhir terhubung satu sama lain sehingga membentuk sebuah lingkaran. Tidak ada NULL di bagian akhir.[5]
 
-Contoh Circular Linked List : 
+#### Contoh Circular Linked List : 
 ![Contoh Circular Linked List](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/6dbfb962-ba42-4dfe-b53e-a6c8001b19b5)
+
 
 
 ### Constructor 
@@ -952,8 +956,8 @@ int main() {
 }
 ```
 #### Output
-![Unguided 2 #2](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/7e252164-bc96-4468-8975-f2f7b5815394)
 ![Unguided 2 #1](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/6cb469b4-8fbc-48a7-ba85-2592e43ae339)
+![Unguided 2 #2](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/7e252164-bc96-4468-8975-f2f7b5815394)
 ![Unguided 2 #3](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/00098f78-8cd9-44e7-b705-65dc5bfb799f)
 
 ### Interpretasi: 
