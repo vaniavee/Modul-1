@@ -19,6 +19,8 @@ Dalam implementasi ini ada 3 pokok atribut yaitu heaps, comparator, dan last. De
 - `Algoritma A (Pathfinding)` : digunakan untuk mengelola open set, yaitu simpul yang perlu diperiksa berdasarkan perkiraan biaya terendah.
 - `Job Scheduling (Penjadwalan Tugas)` : digunakan dalam penjadwalan tugas untuk memprioritaskan tugas berdasarkan deadline atau waktu eksekusi.
 
+![priority queue](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/4302dea0-0e67-489e-816a-8d999a973770)
+
 ## Heaps
 
 Heap adalah suatu data structure yang mirip dengan pohon binary, tetapi memiliki sifat khusus yaitu setiap node memiliki nilai yang lebih besar atau lebih kecil daripada nilai node-node anaknya. Heap dapat dibagi menjadi dua jenis, yaitu max heap dan min heap. Max heap adalah heap yang memiliki sifat nilai node induk lebih besar atau sama dengan nilai node anaknya, sedangkan min heap adalah heap yang memiliki sifat nilai node induk lebih kecil atau sama dengan nilai node anaknya.
@@ -30,6 +32,7 @@ Heap adalah suatu data structure yang mirip dengan pohon binary, tetapi memiliki
 - `getMax()`: Mengembalikan nilai maksimum. 
 - `changePriority(i, p)`: mengubah nilai tertentu dari priority queue.
 
+![MinHeapAndMaxHeap](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/b668f651-6e76-4a90-8d49-805189e93367)
 
 ## Guided 
 
