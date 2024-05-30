@@ -24,6 +24,8 @@ Dalam sebuah fungsi rekursif pemanggilan dapat terjadi berulang kali. Karena ada
 - Rekursif langsung : dalam rekursi langsung, fungsi memanggil dirinya sendiri secara langsung.
 - Rekursif tidak langsung : jika sebuah fungsi memanggil dirinya sendiri secara tidak langsung dari fungsi lain[3]
 
+
+
 ## Hash Table
 Hash Table adalah struktur data yang mengorganisir data ke dalam pasangan kunci-nilai. Hash table biasanya terdiri dari dua komponen utama: array (atau vektor) dan fungsi hash. Hashing adalah teknik untuk mengubah rentang nilai kunci menjadi rentang indeks array[3].
 
@@ -32,6 +34,7 @@ Array menyimpan data dalam slot-slot yang disebut bucket. Setiap bucket dapat me
 Faktor muatan tabel hash ditentukan oleh berapa banyak elemen yang disimpan di sana sehubungan dengan seberapa besar tabel tersebut. Tabel mungkin berantakan dan memiliki waktu pencarian lebih lama serta tabrakan jika faktor muatannya tinggi. Faktor beban yang ideal dapat dipertahankan dengan penggunaan fungsi hash yang baik dan pengubahan ukuran tabel yang tepat[5].
 
 ![Hash Table](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/24a73d8d-c067-4b5e-a137-7a296e90e1e4)
+
 
 
 ## Guided 
@@ -66,12 +69,15 @@ int main(){
 #### Output :
 ![Guided 1](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/213cad17-75b8-4a8a-a5f9-01201eb7f4fb)
 
+
 Kode diatas merupakan program untuk melakukan hitung mundur dari angka yang diinputkan menggunakan rekursif langsung (direct recursion). 
 
 Fungsi `countdown` memiliki variabel/ parameter `n` yang merupakan angka untuk memulai hitung mundur. Ketika nilai `n` sama dengan `0` maka fungsi akan berhenti dan tidak memanggil dirinya sendiri lagi. `cout << n << " "; countdown (n-1);` berfungsi untuk mencetak angka `n` dan kemudian memanggil fungsi `countdown` lagi dengan parameter `n-1`. Dengan demikian fungsi `countdown` akan memanggil dirinya sendiri secara rekursif sampai kondisi berhenti tercapai. Pada main programm, fungsi `countdown` akan dipanggil dengan parameter `5` sehingga akan melakukan hitung mundur dari 5 sampai 0. 
 
+
 #### Full code Screenshot:
 ![Fullcode Guided 1](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/823f3a5f-d40f-4979-b4bf-d7ea72945fa7)
+
 
 
 ### 2.  Rekursif Tidak Langsung (IndirectRecursion)
@@ -110,6 +116,7 @@ int main()
 #### Output :
 ![Guided 2](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/9647286b-bae7-4942-905d-2f256efe6755)
 
+
 Program diataas menggunakan rekursif tidak langsung pada kedua fungsi. yaitu `functionA` dan `functionB` yang saling memanggil satu sama lain.
 
 `FunctionA` memiliki parameter `n`. Pertama program akan memastikan apakah `n` lebih besar dari `0` sebelum memulai rekursif. Setekah itu melalui fungsi `functionB(n-1)` fungsi `functionB` akan dipanggil dengan parameter `n-1`.
@@ -118,8 +125,10 @@ Program diataas menggunakan rekursif tidak langsung pada kedua fungsi. yaitu `fu
 
 lalu program akan memanggil fungsi `functionA` dengan parameter `num` yang diinisialisasi dengan nilai `5`. Ini akan memanggil fungsi `functionB` dengan parameter `4` ->>  `(n-1 = 5-1=4)`, yang kemudian akan memanggil fungsi `functionA` dengan parameter `2` ->> `(n/2 = 4-2 = 2)`, dan seterusnya. `functionA(0)` tidak melakukan apa-apa karena `n` tidak lebih besar dari 0, sehingga rekursi berhenti.
 
+
 #### Full code Screenshot:
 ![Fullcode Guided 2](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/ac853a56-88c1-4452-887a-f281ea0c2d9f)
+
 
 
 ### 3.  HashTable
@@ -227,6 +236,7 @@ int main() {
 #### Output :
 ![Guided 3](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/072f383d-7273-49cc-ae8a-48bd8fcd4248)
 
+
 Kode diatas merupakan program untuk menyimpan data karyawan menggunakan hash table. Pertama program akan mendeklarasikan kelas `HashNode` digunakan untuk menyimpan data karyawan, yang terdiri dari nama dan nomor telepon. Kelas `HashMap` digunakan untuk mengelola data karyawan dalam bentuk hash table. `HeasMap` memiliki beberapa fungsi, yaitu :
 
 1. `hashFunc(string key)`: Fungsi ini digunakan untuk menghitung indeks hash dari nama karyawan.
@@ -237,8 +247,10 @@ Kode diatas merupakan program untuk menyimpan data karyawan menggunakan hash tab
 
 Pada main, program akan melakukan operasi seperti Menambahkan data karyawan dengan nama "Mistah", "Pastah", dan "Ghana" ke dalam hash table. Mencari data karyawan berdasarkan nama dan menampilkan nomor teleponnya. Menghapus data karyawan dengan nama "Mistah" dari hash table. Dan menampilkan seluruh data karyawan dalam hash table menggunakan fungsi print().
 
+
 #### Full code Screenshot:
 ![Fullcode Guided 3](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/3fd6fe00-bdc9-4e79-bc07-823ef38ee445)
+
 
 
 ## Unguided 
@@ -278,6 +290,7 @@ int main() {
 #### Output:
 ![Unguided 1](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/b6fd6f98-d87a-4a5a-8727-1fe8b4a68a35)
 
+
 ### Interpretasi: 
 Kode diatas adalah program untuk mencari bilangan bulat positif menggunakan fungsi rekursif langsung.
 
@@ -285,8 +298,10 @@ Pertama program akan meminta user memasukkan bilangan bulat positif. Kemudian, p
 
 Fungsi `faktorial(int n)` adalah fungsi rekursif yang digunakan untuk menghitung faktorial dari bilangan bulat positif `n`. Jika `n` sama dengan 0 atau 1, maka fungsi akan mengembalikan nilai 1, karena faktorial dari 0 dan 1 adalah 1. Tetapi jika `n` lebih besar dari 1, maka fungsi akan mengembalikan hasil perkalian antara `n` dan hasil panggilan fungsi faktorial dengan argumen `n-1`.
 
+
 #### Full code Screenshot:
 ![Fullcode Unguided 1](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/445b1a90-d0c1-4179-b0fc-bba1546f49d3)
+
 
 
 ### 2. Buatlah versi program Rekursif Tidak Langsung (Indirect Recursion) dari soal nomor 1 di atas!
@@ -330,6 +345,7 @@ int main() {
 #### Output
 ![Unguided 2](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/6151b231-8198-49d9-8782-a88b02524847)
 
+
 ### Interpretasi: 
 Kode diatas merupakan program untuk mencari faktorial bilangan bulat positif menggunakan rekursif tidak langsung.
 
@@ -337,8 +353,10 @@ Pertama program akan mendeklarasikan fungsi `faktorial2` yang akan dipanggil ole
 
 Fungsi `faktorial1` adalah fungsi rekursif yang menghitung faktorial sebuah bilangan bulat positif. Jika `n` sama dengan 0 atau 1, maka fungsi akan mengembalikan nilai 1. Tetapi jika `n` lebih besar dari 1, maka fungsi akan memanggil dirinya sendiri dengan argumen `n-1` dan mengalikan hasilnya dengan `n`. Fungsi `faktorial2` adalah fungsi yang memanggil fungsi faktorial1.
 
+
 #### Full code Screenshot:
 ![Fullcode Unguided 2](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/28175302-041e-46d1-ac11-9f5776f3e4ee)
+
 
 
 ### 3.  Implementasikan hash table untuk menyimpan data mahasiswa. Setiap mahasiswa memiliki NIM dan nilai. Implementasikan fungsi untuk menambahkan data baru, menghapus data, mencari data berdasarkan NIM, dan mencari data berdasarkan nilai. Dengan ketentuan :
@@ -494,6 +512,7 @@ int main() {
 ![Unguided 3 #1](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/a275d2a8-26bb-484c-8572-08a225bd55de)
 ![Unguided 3 #2](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/1aac5bd5-cc0e-47f7-81a3-ae876cb01fd3)
 
+
 ### Interpretasi: 
 kode diatas merupakan program untuk menyimpan data mahasiswa menggunakan hash table. Pertama program akan mendeklarasikan struct `Mahasiswa` untuk menyimpan NIM, nama, dan nilai mahasiswa. Class `HashMap` memiliki ukuran 11.
 
@@ -520,8 +539,10 @@ Pada main() function, program akan meminta user untuk memilih menu yang tersedia
 
 Program akan menampilkan pesan "Thankyou have a nice day!" sebelum keluar dari program. Jika user memasukkan pilihan yang salah, program akan menampilkan error message "Pilihan tidak valid. Masukkan pilihan yang benar."
 
+
 #### Full code Screenshot:
 ![Fullcode Unguided 3](https://github.com/vaniavee/Praktikum-Struktur-Data-Assignment/assets/160705515/9f8631ac-483d-4e19-b8ef-f677a319deb4)
+
 
 
 ## Kesimpulan
