@@ -21,8 +21,8 @@ Dalam sebuah fungsi rekursif pemanggilan dapat terjadi berulang kali. Karena ada
 4. Binary search
 
 ### Jenis-jenis rekursif
-a. Rekursif langsung : dalam rekursi langsung, fungsi memanggil dirinya sendiri secara langsung.
-b. Rekursif tidak langsung : jika sebuah fungsi memanggil dirinya sendiri secara tidak langsung dari fungsi lain[3]
+- Rekursif langsung : dalam rekursi langsung, fungsi memanggil dirinya sendiri secara langsung.
+- Rekursif tidak langsung : jika sebuah fungsi memanggil dirinya sendiri secara tidak langsung dari fungsi lain[3]
 
 ## Hash Table
 Hash Table adalah struktur data yang mengorganisir data ke dalam pasangan kunci-nilai. Hash table biasanya terdiri dari dua komponen utama: array (atau vektor) dan fungsi hash. Hashing adalah teknik untuk mengubah rentang nilai kunci menjadi rentang indeks array[3].
@@ -229,11 +229,11 @@ int main() {
 
 Kode diatas merupakan program untuk menyimpan data karyawan menggunakan hash table. Pertama program akan mendeklarasikan kelas `HashNode` digunakan untuk menyimpan data karyawan, yang terdiri dari nama dan nomor telepon. Kelas `HashMap` digunakan untuk mengelola data karyawan dalam bentuk hash table. `HeasMap` memiliki beberapa fungsi, yaitu :
 
-a. `hashFunc(string key)`: Fungsi ini digunakan untuk menghitung indeks hash dari nama karyawan.
-b. `insert(string name, string phone_number)`: Fungsi ini digunakan untuk menambahkan data karyawan ke dalam hash table.
-c. `remove(string name)`: Fungsi ini digunakan untuk menghapus data karyawan dari hash table berdasarkan nama.
-d. `searchByName(string name)`: Fungsi ini digunakan untuk mencari data karyawan berdasarkan nama dan mengembalikan nomor teleponnya.
-e. `print()`: Fungsi ini digunakan untuk menampilkan seluruh data karyawan dalam hash table
+1. `hashFunc(string key)`: Fungsi ini digunakan untuk menghitung indeks hash dari nama karyawan.
+2. `insert(string name, string phone_number)`: Fungsi ini digunakan untuk menambahkan data karyawan ke dalam hash table.
+3. `remove(string name)`: Fungsi ini digunakan untuk menghapus data karyawan dari hash table berdasarkan nama.
+4. `searchByName(string name)`: Fungsi ini digunakan untuk mencari data karyawan berdasarkan nama dan mengembalikan nomor teleponnya.
+5. `print()`: Fungsi ini digunakan untuk menampilkan seluruh data karyawan dalam hash table
 
 Pada main, program akan melakukan operasi seperti Menambahkan data karyawan dengan nama "Mistah", "Pastah", dan "Ghana" ke dalam hash table. Mencari data karyawan berdasarkan nama dan menampilkan nomor teleponnya. Menghapus data karyawan dengan nama "Mistah" dari hash table. Dan menampilkan seluruh data karyawan dalam hash table menggunakan fungsi print().
 
